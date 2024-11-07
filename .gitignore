@@ -1,0 +1,15 @@
+# Node.js dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# Logs
+npm-debug.log
+
+# System files (Ejemplo para macOS y Windows)
+.DS_Store
+Thumbs.db
+
+# IDE settings (Ejemplo para VSCode)
+.vscode/

@@ -1,0 +1,48 @@
+/* global.css */
+
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Diseño Desktop (Ancho mayor a 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Diseño Tablet (Ancho entre 768px y 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Diseño Móvil (Ancho menor a 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

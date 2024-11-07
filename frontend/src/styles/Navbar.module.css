@@ -1,0 +1,71 @@
+/* Navbar.module.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #422e10;
+    color: white;
+    width: 100vw;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+/* Vista móvil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* Coloca los elementos en columna */
+        padding: 1rem;
+    }
+}
+
+.navLink {
+    margin: 0.5rem 0;
+    /* Ajusta el espacio entre los enlaces en columna */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e6b800;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navLinks li {
+    display: inline;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #ffcc00;
+}
+
+.bookButton {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookButton:hover {
+    background-color: #e6b800;
+}
