@@ -1,22 +1,30 @@
 /* ImageSlider.module.css */
 .slider {
     position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+    max-width: 100%;
+    height: 400px;
+    /* Altura fija para todas las imágenes */
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    /* Fondo para que se vea limpio si las imágenes son de diferentes tamaños */
 }
 
 .imageContainer {
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
     object-fit: cover;
+    /* Ajusta la imagen para que ocupe toda el área sin deformarse */
 }
 
 .leftArrow,
@@ -24,13 +32,14 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    font-size: 2rem;
+    padding: 10px;
     cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
+    font-size: 24px;
+    transition: background 0.3s;
+    z-index: 1;
 }
 
 .leftArrow {
@@ -39,4 +48,9 @@
 
 .rightArrow {
     right: 10px;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    background: rgba(0, 0, 0, 0.8);
 }

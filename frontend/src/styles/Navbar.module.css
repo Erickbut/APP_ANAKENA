@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #422e10;
+    background-color: #f1a83a;
     color: white;
     width: 100vw;
     box-sizing: border-box;
@@ -13,33 +13,14 @@
     top: 0;
     left: 0;
     z-index: 1000;
-        
 }
 
-/* Vista móvil */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        /* Coloca los elementos en columna */
-        padding: 1rem;
-    }
-}
-
-.navLink {
-    margin: 0.5rem 0;
-    /* Ajusta el espacio entre los enlaces en columna */
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #e6b800;
-}
-
+/* Enlaces de navegación */
 .navLinks {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin: 0;
 }
 
 .navLinks li {
@@ -56,6 +37,16 @@
     color: #ffcc00;
 }
 
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+/* Botón de reserva */
 .bookButton {
     background-color: #ffcc00;
     color: #333;
@@ -68,4 +59,43 @@
 
 .bookButton:hover {
     background-color: #e6b800;
+}
+
+/* Icono de menú hamburguesa para móviles */
+.hamburger {
+    display: none;
+    /* Oculto en pantallas grandes */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Vista móvil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* Oculta los enlaces de navegación en móviles */
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f1a83a;
+        padding: 1rem 0;
+        position: absolute;
+        top: 60px;
+        /* Ajusta según el tamaño del navbar */
+        left: 0;
+    }
+
+    /* Mostrar el menú cuando la clase active esté presente */
+    .navbar.active .navLinks {
+        display: flex;
+    }
+
+    /* Mostrar el icono de hamburguesa en móviles */
+    .hamburger {
+        display: block;
+    }
 }
