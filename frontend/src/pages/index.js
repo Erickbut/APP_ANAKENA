@@ -6,7 +6,7 @@ import Section from '../components/Section';
 
 function HomePage() {
     return (
-        <div style={{ paddingTop: '4rem' }}> {/* Agrega padding-top para evitar que el Navbar tape el contenido */}
+        <div>
             <Navbar />
             <ImageSlider />
             <div className='hotel_vision'>
