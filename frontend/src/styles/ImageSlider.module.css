@@ -1,15 +1,12 @@
-/* ImageSlider.module.css */
 .slider {
     position: relative;
     max-width: 100%;
-    height: 400px;
-    /* Altura fija para todas las imágenes */
+    height: 420px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f3f3f3;
-    /* Fondo para que se vea limpio si las imágenes son de diferentes tamaños */
 }
 
 .imageContainer {
@@ -24,16 +21,21 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ajusta la imagen para que ocupe toda el área sin deformarse */
 }
 
+/* Flechas */
 .leftArrow,
 .rightArrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     position: absolute;
-    top: 50%;
+    bottom: 0px;
+    /* Centrado vertical */
     transform: translateY(-50%);
+    /* Ajusta al centro */
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -52,5 +54,36 @@
 
 .leftArrow:hover,
 .rightArrow:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(211, 181, 46, 0.8);
+}
+
+/* Indicadores (círculos) */
+.indicators {
+    position: absolute;
+    bottom: 40px;
+    /* Espaciado desde la parte inferior */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    /* Espaciado entre los círculos */
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicator.active {
+    background: #d3b52e;
+    /* Color activo */
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 1);
 }

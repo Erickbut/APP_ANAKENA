@@ -1,13 +1,12 @@
-/* Navbar.module.css */
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    /* Ajuste para menos altura en móviles */
     background-color: #f1a83a;
     color: white;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -15,11 +14,21 @@
     z-index: 1000;
 }
 
+/* Logo */
+.logo {
+    font-size: 1.2rem;
+    /* Tamaño reducido para móviles */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
 /* Enlaces de navegación */
 .navLinks {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 0;
 }
 
@@ -31,29 +40,25 @@
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 0.9rem;
+    /* Tamaño de texto reducido */
 }
 
 .navLinks a:hover {
     color: #ffcc00;
 }
 
-/* Logo */
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-right: 2rem;
-}
-
 /* Botón de reserva */
 .bookButton {
     background-color: #ffcc00;
     color: #333;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
+    /* Botón más compacto */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 0.9rem;
+    /* Tamaño reducido */
     transition: background-color 0.3s ease;
 }
 
@@ -61,7 +66,7 @@
     background-color: #e6b800;
 }
 
-/* Icono de menú hamburguesa para móviles */
+/* Icono de menú hamburguesa */
 .hamburger {
     display: none;
     /* Oculto en pantallas grandes */
@@ -73,29 +78,34 @@
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 1rem;
+        align-items: flex-start;
+        /* Alinear contenido a la izquierda */
+        padding: 0.5rem 1rem;
     }
 
-    /* Oculta los enlaces de navegación en móviles */
+    /* Oculta los enlaces de navegación por defecto */
     .navLinks {
         display: none;
         flex-direction: column;
+        gap: 0.5rem;
+        /* Espaciado compacto entre enlaces */
         width: 100%;
         background-color: #f1a83a;
-        padding: 1rem 0;
+        padding: 0.5rem 1rem;
         position: absolute;
-        top: 60px;
-        /* Ajusta según el tamaño del navbar */
+        top: 100%;
+        /* Alineado justo debajo del navbar */
         left: 0;
+        z-index: 999;
     }
 
-    /* Mostrar el menú cuando la clase active esté presente */
+    /* Mostrar enlaces cuando la clase active esté presente */
     .navbar.active .navLinks {
         display: flex;
     }
 
-    /* Mostrar el icono de hamburguesa en móviles */
     .hamburger {
-        display: block;
+        display: flex;
+        /* Mostrar hamburguesa en móviles */
     }
 }

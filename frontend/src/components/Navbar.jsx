@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className={`${styles.navbar} ${isMenuOpen ? styles.active : ''}`}>
             <div className={styles.logo}>
                 <Link href="/">
-                    <Image src="/images/LOGOBORDELOA.jpg" alt="Logo de Borde Loa" width={100} height={50} />
+                    <Image src="/images/LOGOBORDELOA.jpg" alt="Logo de Borde Loa" width={100} height={100} />
                 </Link>
             </div>
             <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
