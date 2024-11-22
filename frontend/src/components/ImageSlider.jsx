@@ -10,6 +10,7 @@ const images = [
     '/images/entrada_cool.jpg',
     '/images/atrasquincho.jpg',
     '/images/pasillorecepcion.jpg',
+    '/images/hotelatras.jpg',
     // Agrega las rutas de tus imágenes aquí
 ];
 
