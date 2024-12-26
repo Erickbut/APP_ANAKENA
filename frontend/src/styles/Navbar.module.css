@@ -3,8 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    /* Ajuste para menos altura en móviles */
-    background: linear-gradient(to bottom, rgba(207, 90, 22, 0.856), rgba(207, 90, 22, 0));
+    background: linear-gradient(to bottom, rgba(177, 72, 11, 0.856), rgba(207, 90, 22, 0));
     color: white;
     width: 100%;
     height: fit-content;
@@ -13,7 +12,27 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: transform 0.6s ease-in-out;
 }
+
+.navbar.visible {
+    transform: translateY(0);
+    /* Navbar está visible */
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    /* Navbar oculto */
+}
+
+.absolute {
+    font-size: 2rem;
+    color: #333;
+    margin-right: 0.4cm;
+    margin-left: 0.4cm;
+}
+
+
 
 /* Logo */
 .logo {
@@ -64,24 +83,29 @@
 }
 
 .bookButton:hover {
-    background-color: #e6b800;
+    background-color: #cf5a16;
+    color: aliceblue;
 }
 
 /* Icono de menú hamburguesa */
 .hamburger {
     display: none;
     /* Oculto en pantallas grandes */
-    font-size: 4rem;
+    font-size: 3rem;
     cursor: pointer;
 }
 
 /* Vista móvil */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction:row;
+        flex-direction: row;
         align-items: flex-start;
         /* Alinear contenido a la izquierda */
         padding: 0.5rem 1rem;
+    }
+
+    .bookButton {
+        display: none;
     }
 
     /* Oculta los enlaces de navegación por defecto */
@@ -105,8 +129,10 @@
         display: flex;
     }
 
+    /* Mostrar hamburguesa en móviles */
     .hamburger {
         display: flex;
-        /* Mostrar hamburguesa en móviles */
+        margin-top: 0.3cm;
+
     }
 }

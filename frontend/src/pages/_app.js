@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Hotel Anakena Borde Loa - Calama, Chile</title>
+                <title>ANAKENA HOTELES, CHILE</title>
                 <link rel="icon" href="/images/flavico.jpg" />
             </Head>
             <Component {...pageProps} />
