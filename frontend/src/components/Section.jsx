@@ -1,13 +1,16 @@
 // src/components/Section.jsx
 import React from 'react';
-import styles from '../styles/Section.module.css'; // Asegúrate de importar el CSS correctamente
+import styles from '../styles/Section.module.css';
 
-const Section = ({ title, children }) => {
+const Section = ({ title, icon, children }) => {
     return (
-        <div className={styles.section}>
-            <h2 className={styles.title}>{title}</h2>
-            <div className={styles.text}>{children}</div>
-        </div>
+        <section className={styles.section}>
+            <div className={styles.header}>
+                {icon && <img src={icon} alt={`${title} icon`} className={styles.icon} />}
+                <h2 className={styles.title}>{title}</h2>
+            </div>
+            <div className={styles.content}>{children}</div>
+        </section>
     );
 };
 

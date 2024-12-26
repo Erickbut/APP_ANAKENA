@@ -3,6 +3,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import ImageSlider from '../components/ImageSlider';
 import Section from '../components/Section';
+import Rooms from '../components/Rooms';
+import Services from '../components/Services';
+import Rates from '../components/Rates';
+import Location from '../components/Location';
+import Contact from '../components/Contact';
 
 function HomePage() {
     return (
@@ -20,6 +25,16 @@ function HomePage() {
                     <p>Fundado en 1995, el Hotel Borde Loa se ha consolidado como un lugar...</p>
                 </Section>
             </div>
+
+            <div id="rooms">
+                <h2>Habitaciones</h2>
+                <Rooms />
+            </div>
+            <Services />
+            <Rates />
+            <Location />
+            <Contact />
+
         </div>
     );
 }

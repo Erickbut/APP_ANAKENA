@@ -1,8 +1,7 @@
-// src/pages/contact.js
-import { useState } from 'react';
-import Navbar from '../components/Navbar';
+// src/components/Contact.jsx
+import React, { useState } from 'react';
 
-function ContactPage() {
+const Contact = () => {
     const [form, setForm] = useState({ name: '', email: '', message: '' });
 
     const handleChange = (e) => {
@@ -13,13 +12,14 @@ function ContactPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Aquí podrías hacer una solicitud a un backend para procesar el formulario
-        console.log(form);
+        console.log('Formulario enviado:', form);
+        alert('Gracias por contactarnos. Nos pondremos en contacto contigo pronto.');
+        setForm({ name: '', email: '', message: '' }); // Reinicia el formulario
     };
 
     return (
-        <div>
-            <Navbar />
-            <h1>Contacto</h1>
+        <section id="contact">
+            <h2>Contacto</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Nombre:</label>
@@ -29,6 +29,7 @@ function ContactPage() {
                         name="name"
                         value={form.name}
                         onChange={handleChange}
+                        placeholder="Tu nombre"
                         required
                     />
                 </div>
@@ -40,6 +41,7 @@ function ContactPage() {
                         name="email"
                         value={form.email}
                         onChange={handleChange}
+                        placeholder="Tu correo"
                         required
                     />
                 </div>
@@ -50,13 +52,14 @@ function ContactPage() {
                         name="message"
                         value={form.message}
                         onChange={handleChange}
+                        placeholder="Escribe tu mensaje aquí"
                         required
                     ></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
-        </div>
+        </section>
     );
-}
+};
 
-export default ContactPage;
+export default Contact;

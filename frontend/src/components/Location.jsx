@@ -1,21 +1,21 @@
-// src/pages/location.js
-import Navbar from '../components/Navbar';
+// src/components/Location.jsx
+import React from 'react';
 
-function LocationPage() {
+const Location = () => {
     return (
-        <div>
-            <Navbar />
-            <h1>Ubicación</h1>
+        <section id="location">
+            <h2>Ubicación</h2>
             <p>Dirección: Calle Ficticia 123, Calama, Chile</p>
             <iframe
-                width="600"
+                width="100%"
                 height="450"
                 src="https://www.google.com/maps/embed/v1/place?q=Hotel+Borde+Loa,+Calama,+Chile&key=YOUR_API_KEY"
                 allowFullScreen=""
                 loading="lazy"
+                style={{ border: 0 }}
             ></iframe>
-        </div>
+        </section>
     );
-}
+};
 
-export default LocationPage;
+export default Location;

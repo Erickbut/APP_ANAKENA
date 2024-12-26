@@ -1,7 +1,7 @@
-// src/pages/rates.js
-import Navbar from '../components/Navbar';
+// src/components/Rates.jsx
+import React from 'react';
 
-function RatesPage() {
+const Rates = () => {
     const rates = [
         { type: "Standard", price: "$80" },
         { type: "Suite", price: "$150" },
@@ -9,9 +9,8 @@ function RatesPage() {
     ];
 
     return (
-        <div>
-            <Navbar />
-            <h1>Tarifas</h1>
+        <section id="rates">
+            <h2>Tarifas</h2>
             <div>
                 {rates.map((rate, index) => (
                     <div key={index}>
@@ -20,8 +19,8 @@ function RatesPage() {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
-}
+};
 
-export default RatesPage;
+export default Rates;

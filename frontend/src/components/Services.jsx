@@ -1,7 +1,7 @@
-// src/pages/services.js
-import Navbar from '../components/Navbar';
+// src/components/Services.jsx
+import React from 'react';
 
-function ServicesPage() {
+const Services = () => {
     const services = [
         "Wi-Fi gratuito",
         "Restaurante 24 horas",
@@ -11,16 +11,15 @@ function ServicesPage() {
     ];
 
     return (
-        <div>
-            <Navbar />
-            <h1>Servicios</h1>
+        <section id="services">
+            <h2>Servicios</h2>
             <ul>
                 {services.map((service, index) => (
                     <li key={index}>{service}</li>
                 ))}
             </ul>
-        </div>
+        </section>
     );
-}
+};
 
-export default ServicesPage;
+export default Services;
