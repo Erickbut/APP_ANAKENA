@@ -6,26 +6,28 @@ import styles from '../styles/Rooms.module.css';
 const Rooms = () => {
     const rooms = [
         {
-            title: "Single Room",
-            images: ["/images/single1.jpg", "/images/single2.jpg", "/images/single3.jpg"],
+            title: "Habitación simple o matrimonial",
+            images: ["/images/single1.jpg", "/images/single2.jpg", "/images/single3.jpg", "/images/single4.jpg", "/images/single5.jpg", "/images/bathroom1.jpg"],
             description: "Una habitación perfecta para viajeros individuales.",
             amenities: [
                 "Wi-Fi gratuito",
                 "TV con DirecTV",
                 "Calentadores",
                 "Baño incluido",
+                "Servicio a la habitación",
                 "Desayuno buffet"
             ]
         },
         {
-            title: "Double Room",
-            images: ["/images/double1.jpg", "/images/double2.jpg", "/images/double3.jpg"],
+            title: "Habitación doble",
+            images: ["/images/twin1.jpg", "/images/twin2.jpg", "/images/bathtwin.jpg", "/images/bathtwin2.jpg"],
             description: "Ideal para parejas o dos personas que buscan comodidad.",
             amenities: [
                 "Wi-Fi gratuito",
                 "TV con DirecTV",
                 "Calentadores",
                 "Baño incluido",
+                "Servicio a la habitación",
                 "Desayuno buffet"
             ]
         }

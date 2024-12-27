@@ -50,18 +50,18 @@ const Navbar = () => {
             </div>
 
             <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
-                <li><Link href="/" onClick={toggleMenu}>Inicio</Link></li>
-                <li><a href="#rooms" onClick={toggleMenu}>Habitaciones</a></li>
-                <li><a href="#services" onClick={toggleMenu}>Servicios</a></li>
-                <li><a href="#rates" onClick={toggleMenu}>Tarifas</a></li>
-                <li><a href="#location" onClick={toggleMenu}>Ubicación</a></li>
-                <li><a href="#contact" onClick={toggleMenu}>Contacto</a></li>
+                <li><Link href="/" onClick={toggleMenu}> <h3>Inicio</h3> </Link></li>
+                <li><a href="#rooms" onClick={toggleMenu}><h3>Habitaciones</h3></a></li>
+                <li><a href="#services" onClick={toggleMenu}><h3>Servicios</h3></a></li>
+                <li><a href="#rates" onClick={toggleMenu}><h3>Tarifas</h3></a></li>
+                <li><a href="#location" onClick={toggleMenu}><h3>Ubicación</h3></a></li>
+                <li><a href="#contact" onClick={toggleMenu}><h3>Contacto</h3></a></li>
             </ul>
             <button
                 className={styles.bookButton}
                 onClick={() => window.open("https://wa.link/i2set3", "_blank")}
             >
-                Reservar
+                <div className={styles.reserve}>Reservar</div> 
             </button>
             <div className={styles.hamburger} onClick={toggleMenu}>
                 ☰

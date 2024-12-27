@@ -30,7 +30,10 @@ function HomePage() {
                 <h2>Habitaciones</h2>
                 <Rooms />
             </div>
-            <Services />
+            <div id="services">
+                <h2>Nuestros Servicios</h2>
+                <Services />
+            </div>
             <Rates />
             <Location />
             <Contact />

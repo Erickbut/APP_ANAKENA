@@ -7,6 +7,9 @@
     overflow: hidden;
     margin: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Asegura que todas las tarjetas se expandan igual */
+    max-width: 350px; /* Para mantener un diseño consistente */
+    min-height: 720px; /* Define una altura mínima consistente */
 }
 
 .card:hover {
