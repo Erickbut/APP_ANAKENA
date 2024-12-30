@@ -51,11 +51,11 @@ const Navbar = () => {
 
             <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
                 <li><Link href="/" onClick={toggleMenu}> <h3>Inicio</h3> </Link></li>
-                <li><a href="#rooms" onClick={toggleMenu}><h3>Habitaciones</h3></a></li>
-                <li><a href="#services" onClick={toggleMenu}><h3>Servicios</h3></a></li>
-                <li><a href="#rates" onClick={toggleMenu}><h3>Tarifas</h3></a></li>
-                <li><a href="#location" onClick={toggleMenu}><h3>Ubicación</h3></a></li>
-                <li><a href="#contact" onClick={toggleMenu}><h3>Contacto</h3></a></li>
+                <li><Link href="/rates" onClick={toggleMenu}><h3>Tarifas</h3></Link></li>
+                <li><a href="/#rooms" onClick={toggleMenu}><h3>Habitaciones</h3></a></li>
+                <li><a href="/#services" onClick={toggleMenu}><h3>Servicios</h3></a></li>
+                <li><a href="/#location" onClick={toggleMenu}><h3>Ubicación</h3></a></li>
+                <li><a href="/#contact" onClick={toggleMenu}><h3>Contacto</h3></a></li>
             </ul>
             <button
                 className={styles.bookButton}

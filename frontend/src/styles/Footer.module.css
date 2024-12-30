@@ -1,0 +1,34 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.socialIcons {
+    margin-bottom: 1rem;
+}
+
+.socialIcons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 2rem; /* Ajusta el tamaño del icono */
+    transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #b1480b; /* Cambia el color cuando el icono sea hover */
+}
+
+.copyRights {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .socialIcons a {
+        font-size: 1.5rem;
+    }
+}

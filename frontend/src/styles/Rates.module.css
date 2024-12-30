@@ -1,0 +1,100 @@
+.ratesContainer {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 900px;
+    overflow-x: auto;
+    /* Hace desplazable el contenido horizontalmente */
+}
+.whatsappLink {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+.whatsappIcon {
+    width: 20px; /* Ajusta el tamaño según lo necesites */
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.whatsappIcon:hover {
+    transform: scale(1.2); /* Hace que el ícono crezca al pasar el mouse */
+    opacity: 0.8; /* Añade un efecto de transparencia */
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #b1480b;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    min-width: 600px;
+    /* Evita que la tabla sea demasiado pequeña */
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1rem;
+    word-wrap: break-word;
+    /* Permite dividir texto largo */
+}
+
+.table th {
+    background-color: #b1480b;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #f1e0d6;
+}
+
+.bookButton {
+    background-color: #b1480b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookButton:hover {
+    background-color: #a03d0a;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .ratesContainer {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .bookButton {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+}

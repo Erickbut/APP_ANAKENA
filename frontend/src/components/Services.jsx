@@ -17,12 +17,12 @@ const Services = () => {
         },
         {
             title: "Cenas con Música en vivo",
-            image: "/images/almuerzos.jpg",
+            image: "/images/musicavivo.jpg",
             description: "Disfruta una cena familiar con música en vivo y piano todos los viernes.",
         },
         {
             title: "Atención personalizada",
-            image: "/images/deportes.jpg",
+            image: "/images/musicavivo.jpg",
             description: "Vive experiencias inolvidables con una atención única en el restobar.",
         },
         // Agrega más servicios si es necesario
