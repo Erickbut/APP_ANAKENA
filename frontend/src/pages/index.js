@@ -27,11 +27,11 @@ function HomePage() {
             </div>
 
             <div id="rooms">
-                <h2>Habitaciones</h2>
+                <h2 className="titleh">Habitaciones</h2>
                 <Rooms />
             </div>
             <div id="services">
-                <h2>Nuestros Servicios</h2>
+                <h2 className="titleh">Nuestros Servicios</h2>
                 <Services />
             </div>
 
