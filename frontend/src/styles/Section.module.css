@@ -2,7 +2,7 @@
     padding: 2rem;
     margin: 1rem auto;
     max-width: 800px;
-    background: #fff;
+    background: linear-gradient(to top, #f7f7f7, #fff); /* Degradado de abajo hacia arriba */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

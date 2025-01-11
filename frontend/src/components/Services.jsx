@@ -8,7 +8,7 @@ const Services = () => {
         {
             title: "Eventos Sociales",
             image: "/images/birthday.jpg",
-            description: "Celebra cumpleaños, bodas y celebraciones en nuestras instalaciones.",
+            description: "Organizamos cumpleaños, bodas y celebraciones en nuestras instalaciones.",
         },
         {
             title: "Reuniones Empresariales",
