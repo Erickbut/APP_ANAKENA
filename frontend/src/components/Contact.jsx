@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import styles from '../styles/Contact.module.css';
 
 const Contact = () => {
@@ -17,7 +17,14 @@ const Contact = () => {
             const mailtoLink = `mailto:reservas@anakenabordeloa.cl?subject=Mensaje%20de%20Contacto&body=Nombre:%20${encodeURIComponent(form.name)}%0AEmail:%20${encodeURIComponent(form.email)}%0AMensaje:%20${encodeURIComponent(form.message)}`;
             window.location.href = mailtoLink; // Redirige a la aplicación de correo
             setIsSubmitted(true); // Cambiar estado a enviado
-            setForm({ name: '', email: '', message: '' }); // Reinicia el formulario
+
+            // Reinicia el formulario
+            setForm({ name: '', email: '', message: '' });
+
+            // Establece un temporizador para ocultar el mensaje después de 5 segundos
+            setTimeout(() => {
+                setIsSubmitted(false);
+            }, 8000);
         } else {
             alert('Por favor, completa todos los campos.');
         }
@@ -64,7 +71,11 @@ const Contact = () => {
                 </div>
                 <button type="submit" className={styles.submitButton}>Enviar</button>
             </form>
-            {isSubmitted && <p className={styles.thankYouMessage}>Gracias por escribirnos. Nos pondremos en contacto contigo pronto.</p>}
+            {isSubmitted && (
+                <p className={styles.thankYouMessage}>
+                    Gracias por escribirnos. Nos pondremos en contacto contigo pronto.
+                </p>
+            )}
         </section>
     );
 };

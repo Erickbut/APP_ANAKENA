@@ -29,9 +29,15 @@ const Footer = () => {
                 >
                     <i className="fab fa-whatsapp"></i> {/* Icono de WhatsApp */}
                 </a>
+                <a
+                    href="mailto:reservas@anakenabordeloa.cl"
+                    aria-label="Email"
+                >
+                    <i className="fa fa-envelope"></i> {/* Icono de WhatsApp */}
+                </a>
             </div>
             <div className={styles.copyRights}>
-                <p>&copy; 2024 Hotel Anakena Borde Loa. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Hotel y Restaurante Anakena Borde Loa. Todos los derechos reservados.</p>
             </div>
         </footer>
     );

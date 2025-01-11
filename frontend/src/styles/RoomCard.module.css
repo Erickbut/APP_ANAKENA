@@ -7,9 +7,9 @@
     overflow: hidden;
     margin: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; /* Asegura que todas las tarjetas se expandan igual */
-    max-width: 350px; /* Para mantener un diseño consistente */
-    min-height: 720px; /* Define una altura mínima consistente */
+    height: 100%;
+    max-width: 350px;
+    min-height: 720px;
 }
 
 .card:hover {
@@ -53,8 +53,16 @@
     margin: 0;
 }
 
-.amenities li {
+.amenity {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.amenity i {
+    color: #b1480b;
+    font-size: 1.2rem;
 }

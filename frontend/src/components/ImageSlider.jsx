@@ -4,14 +4,12 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/ImageSlider.module.css';
 
 const images = [
-    '/images/portada.png',
+    '/images/entradarecepcion.jpg',
     '/images/rest.jpg',
     '/images/caption.jpg',
     '/images/entrada_cool.jpg',
     '/images/atrasquincho.jpg',
-    '/images/pasillorecepcion.jpg',
     '/images/hotelatras.jpg',
-    '/images/entradarecepcion.jpg',
     // Agrega las rutas de tus imágenes aquí
 ];
 

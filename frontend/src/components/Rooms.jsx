@@ -8,7 +8,7 @@ const Rooms = () => {
         {
             title: "Habitación simple o matrimonial",
             images: ["/images/single1.jpg", "/images/single2.jpg", "/images/single3.jpg", "/images/single4.jpg", "/images/single5.jpg", "/images/bathroom1.jpg"],
-            description: "Una habitación perfecta para viajeros individuales.",
+            description: "Ideal para una persona o pareja.",
             amenities: [
                 "Wi-Fi gratuito",
                 "TV con DirecTV",
@@ -21,7 +21,7 @@ const Rooms = () => {
         {
             title: "Habitación doble",
             images: ["/images/twin1.jpg", "/images/twin2.jpg", "/images/bathtwin.jpg", "/images/bathtwin2.jpg"],
-            description: "Ideal para parejas o dos personas que buscan comodidad.",
+            description: "Ideal para dos personas o dos adultos y un menor que buscan comodidad.",
             amenities: [
                 "Wi-Fi gratuito",
                 "TV con DirecTV",

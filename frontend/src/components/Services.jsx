@@ -8,22 +8,22 @@ const Services = () => {
         {
             title: "Eventos Sociales",
             image: "/images/birthday.jpg",
-            description: "Celebra bodas, cumpleaños y más en nuestros salones decorados con estilo.",
+            description: "Celebra cumpleaños, bodas y celebraciones en nuestras instalaciones.",
         },
         {
             title: "Reuniones Empresariales",
             image: "/images/socialevent.jpeg",
-            description: "Habitaciones decoradas para reuniones, coffee break, servicio de catering empresarial.",
+            description: "Amplios salones ambientados para buffets, coffee breaks, reuniones, servicios de catering empresarial y más.",
         },
         {
             title: "Cenas con Música en vivo",
             image: "/images/musicavivo.jpg",
-            description: "Disfruta una cena familiar con música en vivo y piano todos los viernes.",
+            description: "Disfruta una cena familiar con música de piano en vivo, canto y karaoke todos los viernes.",
         },
         {
             title: "Atención personalizada",
-            image: "/images/musicavivo.jpg",
-            description: "Vive experiencias inolvidables con una atención única en el restobar.",
+            image: "/images/atencionpers.jpg",
+            description: "Vive experiencias únicas con una atención personalizada en el restobar.",
         },
         // Agrega más servicios si es necesario
     ];
