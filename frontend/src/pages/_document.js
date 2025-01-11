@@ -4,7 +4,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                {/* Aquí puedes agregar otras etiquetas necesarias, pero no meta viewport */}
             </Head>
             <body>
                 <Main />
