@@ -8,6 +8,8 @@
 
 .socialIcons {
     margin-bottom: 1rem;
+    justify-content: center; /* Centra los iconos */
+    margin-bottom: 1rem;
 }
 
 .socialIcons a {
@@ -34,4 +36,15 @@
     .socialIcons a {
         font-size: 1.5rem;
     }
+}
+
+
+/* Estilo para el enlace de Política de Privacidad */
+.privacyLink {
+    color: #b1480b;
+    text-decoration: underline;
+}
+
+.privacyLink:hover {
+    color: #fff;
 }

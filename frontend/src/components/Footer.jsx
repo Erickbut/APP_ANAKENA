@@ -33,11 +33,17 @@ const Footer = () => {
                     href="mailto:reservas@anakenabordeloa.cl"
                     aria-label="Email"
                 >
-                    <i className="fa fa-envelope"></i> {/* Icono de WhatsApp */}
+                    <i className="fa fa-envelope"></i> {/* Icono de Email */}
                 </a>
             </div>
             <div className={styles.copyRights}>
                 <p>&copy; 2024 Hotel y Restaurante Anakena Borde Loa. Todos los derechos reservados.</p>
+                {/* Enlace a la política de privacidad */}
+                <p>
+                    <a href="/privacy-policy" className={styles.privacyLink}>
+                        Política de privacidad
+                    </a>
+                </p>
             </div>
         </footer>
     );

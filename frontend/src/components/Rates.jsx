@@ -16,20 +16,20 @@ const Rates = () => {
 
     return (
         <div className={styles.ratesContainer}>
-            <h2 className={styles.title}>Tarifas</h2>
+            <h2 className={styles.title}>Tarifas Particulares</h2>
             <table className={styles.table}>
                 <thead>
                     <tr>
                         <th>Días</th>
-                        <th>Habitación Single</th>
-                        <th>Habitación Doble</th>
+                        <th>Habitación Simple</th>
+                        <th>Habitación Matrimonial o Doble</th>
                     </tr>
                 </thead>
                 <tbody>
                     {rates.map((rate, index) => (
                         <tr key={index}>
-                            <td>{rate.days}</td>
-                            <td>
+                            <td data-label="Días">{rate.days}</td>
+                            <td data-label="Habitación Simple">
                                 {rate.single}
                                 <a
                                     href={handleReservation("Single", rate.single)}
@@ -45,7 +45,7 @@ const Rates = () => {
                                     />
                                 </a>
                             </td>
-                            <td>
+                            <td data-label="Habitación Matrimonial / Doble">
                                 {rate.double}
                                 <a
                                     href={handleReservation("Doble", rate.double)}
@@ -64,6 +64,7 @@ const Rates = () => {
                         </tr>
                     ))}
                 </tbody>
+
             </table>
         </div>
     );

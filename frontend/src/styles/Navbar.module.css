@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    background: linear-gradient(to bottom, rgba(177, 72, 11, 0.856), rgba(207, 90, 22, 0));
+    background: linear-gradient(to bottom, rgb(177, 72, 11), rgba(177, 72, 11, 0));
     color: white;
     width: 100%;
     height: fit-content;
@@ -19,7 +19,7 @@
     transform: translateY(0);
     /* Navbar está visible */
 }
-
+s
 .navbar.hidden {
     transform: translateY(-100%);
     /* Navbar oculto */
@@ -33,7 +33,7 @@
 }
 
 .phrase {
-    color: #333;
+    color: #000000;
 }
 
 /* Logo */
@@ -59,7 +59,7 @@
 }
 
 .navLinks a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 0.9rem;
@@ -67,13 +67,13 @@
 }
 
 .navLinks a:hover {
-    color: #cf5a16;
+    color: #ffffff;
 }
 
 /* Botón de reserva */
 .bookButton {
     background-color: #ffcc00;
-    color: #333;
+    color: #000000;
     padding: 0.4rem 0.8rem;
     /* Botón más compacto */
     border: none;
@@ -89,8 +89,8 @@
 }
 
 .bookButton:hover {
-    background-color: #cf5a16;
-    color: aliceblue;
+    background-color: #ffcc009c;
+    color: rgb(255, 255, 255);
 }
 
 /* Icono de menú hamburguesa */
