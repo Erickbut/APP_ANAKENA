@@ -119,7 +119,7 @@ const Rates = () => {
                     ))}
                 </tbody>
             </table>
-            <tr><th>Nota: Todas las opciones incluyen desayuno.</th></tr>
+            <th>Nota: Todas las opciones incluyen desayuno.</th>
         </div>
         
     );
