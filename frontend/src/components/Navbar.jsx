@@ -34,6 +34,8 @@ const Navbar = () => {
         };
     }, [lastScrollY]);
 
+    const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20el%20hotel.`;
+
     return (
         <nav
             className={`${styles.navbar} ${isMenuOpen ? styles.active : ''} ${
@@ -58,9 +60,7 @@ const Navbar = () => {
             </div>
 
             <ul
-                className={`${styles.navLinks} ${
-                    isMenuOpen ? styles.showMenu : ''
-                }`}
+                className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}
             >
                 <li>
                     <Link href="/" onClick={toggleMenu}>
@@ -93,12 +93,14 @@ const Navbar = () => {
                     </a>
                 </li>
             </ul>
+
             <button
                 className={styles.bookButton}
-                onClick={() => window.open('https://wa.link/i2set3', '_blank')}
+                onClick={() => window.open(whatsappLink, '_blank')}
             >
                 <div className={styles.reserve}>Reservar</div>
             </button>
+
             <div className={styles.hamburger} onClick={toggleMenu}>
                 ☰
             </div>

@@ -12,10 +12,13 @@ const Rates = () => {
         { single: "105 USD", double: "115 USD" },
     ];
 
+    // Obtiene el número de WhatsApp desde el archivo .env
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+
     const handleReservation = (roomType, price) => {
         const message = `Hola, me interesa reservar una habitación ${roomType} por ${price}. ¿Está disponible?`;
         const encodedMessage = encodeURIComponent(message);
-        return `https://wa.me/56942781336?text=${encodedMessage}`;
+        return `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     };
 
     return (
@@ -121,7 +124,6 @@ const Rates = () => {
             </table>
             <th>Nota: Todas las opciones incluyen desayuno.</th>
         </div>
-        
     );
 };
 
