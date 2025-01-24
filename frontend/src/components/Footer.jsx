@@ -22,7 +22,7 @@ const Footer = () => {
                     <i className="fab fa-facebook-f"></i> {/* Icono de Facebook */}
                 </a>
                 <a
-                    href="https://wa.me/56978004935"
+                    href="https://wa.me/56942781336"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
