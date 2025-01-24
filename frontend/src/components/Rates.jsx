@@ -13,7 +13,7 @@ const Rates = () => {
     ];
 
     // Obtiene el número de WhatsApp desde el archivo .env
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+    const whatsappNumber = "56942781336";
 
     const handleReservation = (roomType, price) => {
         const message = `Hola, me interesa reservar una habitación ${roomType} por ${price}. ¿Está disponible?`;

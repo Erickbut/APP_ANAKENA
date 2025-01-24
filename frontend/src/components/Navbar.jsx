@@ -34,7 +34,7 @@ const Navbar = () => {
         };
     }, [lastScrollY]);
 
-    const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20el%20hotel.`;
+    const whatsappLink = `https://wa.me/56942781336?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20el%20hotel.`; // Número fijo aquí
 
     return (
         <nav
